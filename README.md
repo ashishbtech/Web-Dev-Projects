@@ -35,9 +35,7 @@ This repository documents my consistency, progress, and commitment to mastering 
 
 ## 📂 Projects
 
-| Project Name | Description | Concepts Practiced |
-|--------------|------------|-------------------|
-| Random Password generator |
+- Random Password Generator  
 
 > More projects will be added as I continue learning and improving 🚀
 

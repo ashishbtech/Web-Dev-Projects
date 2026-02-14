@@ -35,7 +35,8 @@ This repository documents my consistency, progress, and commitment to mastering 
 
 ## 📂 Projects
 
-- Random Password Generator  
+- Random Password Generator
+- Background video player
 
 > More projects will be added as I continue learning and improving 🚀
 

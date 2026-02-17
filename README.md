@@ -37,6 +37,8 @@ This repository documents my consistency, progress, and commitment to mastering 
 
 - Random Password Generator
 - Background video player
+- Analog Clock
+- Dark Mode Toggle
 
 > More projects will be added as I continue learning and improving 🚀
 

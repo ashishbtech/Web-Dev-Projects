@@ -39,6 +39,8 @@ This repository documents my consistency, progress, and commitment to mastering 
 - Background video player
 - Analog Clock
 - Dark Mode Toggle
+- Digital Clock
+- Basic Calculator
 
 > More projects will be added as I continue learning and improving 🚀
 

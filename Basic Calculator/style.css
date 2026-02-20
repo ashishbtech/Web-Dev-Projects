@@ -76,3 +76,8 @@ button:hover{
     grid-row: span 3;
     
 }
+
+.backspace {
+    background-color: #f4a261;  
+    color: white;
+}

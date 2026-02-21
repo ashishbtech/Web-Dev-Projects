@@ -1,0 +1,207 @@
+/* ===== RESET SECTION ===== */
+/* Sab elements ka default margin aur padding remove kar rahe hain */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Size calculation easy banane ke liye */
+}
+
+/* ===== BODY STYLING ===== */
+/* Puri screen ka background aur center alignment */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f1226; /* Dark base background */
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;       /* Full screen height */
+    color: #ffffff;          /* Default text white */
+}
+
+/* ===== MAIN CONTAINER ===== */
+/* Yeh main todo box hai */
+#todo-container {
+    background-color: #1a1f3c; /* Dark purple tone container */
+    width: 420px;
+    padding: 25px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Depth ke liye shadow */
+    transition: 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover karne pe container thoda upar move kare */
+#todo-container:hover {
+    transform: translateY(-4px);
+}
+
+/* ===== HEADER ===== */
+/* Title styling */
+#header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #845EC2; /* Purple primary color */
+}
+
+/* ===== INPUT SECTION ===== */
+/* Input aur button ko ek line me lane ke liye */
+#todo-form {
+    display: flex;
+    gap: 10px; /* Input aur button ke beech gap */
+    margin-bottom: 20px;
+}
+
+/* Input box styling */
+.input-box {
+    flex: 1; /* Input pura available space le */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #845EC2; /* Purple border */
+    background-color: #11142b;
+    color: white;
+    outline: none; /* Default blue outline remove */
+    transition: 0.3s;
+}
+
+/* Jab input pe click kare (focus state) */
+.input-box:focus {
+    border-color: #4FFBDF; /* Cyan highlight */
+}
+
+/* ===== ADD BUTTON ===== */
+#input-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00C2A8; /* Teal button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+#input-button:hover {
+    background-color: #008B74; /* Dark teal on hover */
+    transform: scale(1.05); /* Thoda zoom effect */
+}
+
+/* ===== TASK LIST ===== */
+h2 {
+    margin-bottom: 10px;
+    color: #4FFBDF; /* Cyan accent */
+}
+
+ul {
+    list-style: none; /* Bullet points remove */
+}
+
+/* Har task ka box */
+li {
+    background-color: #11142b;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* Left text, right buttons */
+    align-items: center;
+    border-left: 4px solid #845EC2; /* Purple side accent line */
+    transition: 0.3s ease;
+}
+
+/* Hover pe background thoda light */
+li:hover {
+    background-color: #1a1f3c;
+}
+
+/* Checkbox ka color change */
+input[type="checkbox"] {
+    accent-color: #00C2A8; /* Teal checkbox */
+    cursor: pointer;
+}
+
+/* ===== COMPLETED TASK STYLE ===== */
+/* Jab task complete ho jaye */
+li.completed {
+    background-color: #008B74; /* Dark teal background */
+}
+
+/* Text pe strike lag jaye */
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.7; /* Thoda fade effect */
+}
+
+/* ===== EDIT & DELETE BUTTONS ===== */
+.edit-btn,
+.delete-btn {
+    margin-left: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Edit button styling */
+.edit-btn {
+    background-color: #845EC2; /* Purple */
+    color: white;
+}
+
+/* Edit hover */
+.edit-btn:hover {
+    background-color: #6a48a3;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #ff4b5c; /* Red */
+    color: white;
+}
+
+/* Delete hover */
+.delete-btn:hover {
+    background-color: #e63946;
+}
+
+/* ===== COUNTER SECTION ===== */
+.counter-container {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #4FFBDF; /* Cyan text */
+}
+
+/* Horizontal line styling */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #2d3561;
+    margin: 15px 0;
+}
+
+/* ===== ANIMATION ===== */
+/* Jab new task add ho tab smooth entry ho */
+li {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Animation define kar rahe hain */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile screen ke liye width adjust */
+@media (max-width: 480px) {
+    #todo-container {
+        width: 90%;
+    }
+}
